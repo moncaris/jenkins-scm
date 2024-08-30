@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout the code from the repository
-                checkout scm
+                git url: "https://github.com/moncaris/jenkins-scm.git", branch: 'main'
             }
         }
         
